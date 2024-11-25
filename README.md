@@ -1,3 +1,6 @@
+# This is a FORK of CVAT with a light overlay for running on a custom domain with a reverse proxy terminating SSL.
+[More info](light-overlay/README.md)
+
 <p align="center">
   <img src="/site/content/en/images/cvat-readme-gif.gif" alt="CVAT Platform" width="100%" max-width="800px">
 </p>
