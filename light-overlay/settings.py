@@ -22,4 +22,4 @@ EMAIL_HOST_PASS = os.getenv('EMAIL_PASS')
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
 
 # Site ID which is used for the templates (i.e. email invites)
-SITE_ID = os.getenv('SITE_ID')
+SITE_ID = int(os.getenv('SITE_ID'))
