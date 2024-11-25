@@ -3,4 +3,4 @@ services:
     environment:
       DJANGO_SETTINGS_MODULE: settings
     volumes:
-      - ./local-settings.py:./settings.py:ro
+      - ./light-overlay/local-settings.py:./settings.py:ro
