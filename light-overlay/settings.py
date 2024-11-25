@@ -22,4 +22,8 @@ EMAIL_HOST_PASS = os.getenv('EMAIL_PASS')
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
 
 # Site ID which is used for the templates (i.e. email invites)
-SITE_ID = int(os.getenv('SITE_ID'))
+sid = int(os.getenv('SITE_ID'))
+if sid > 0:
+    SITE_ID = int(sid)
+else:
+    raise ValueError('SITE_ID must be greater than 0')
