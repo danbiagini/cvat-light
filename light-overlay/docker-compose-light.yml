@@ -2,5 +2,6 @@ services:
   cvat_server:
     environment:
       DJANGO_SETTINGS_MODULE: settings
+      CVAT_HOST: ${CVAT_HOST:-localhost}
     volumes:
-      - ./light-overlay/local-settings.py:./settings.py:ro
+      - ./light-overlay/settings.py:/home/django/settings.py:ro

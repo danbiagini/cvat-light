@@ -1,3 +1,5 @@
+import os
+
 # Overlaying production
 from cvat.settings.production import *
 
