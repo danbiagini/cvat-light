@@ -21,3 +21,9 @@ This overlay is used to run CVAT with a custom domain name with a reverse proxy 
 ```git checkout -b light/v2.23.0```
 1. Cherry pick the relevant commits from the cvat-light branch to the new release branch
 ```git cherry-pick light/v2.22.0```
+1. Commit the changes and push to the remote repo
+```git commit -am "Upgrade to v2.23.0"```
+```git push origin light/v2.23.0```
+1. Create a tag on the remote repo
+```git tag -a light-v2.23.0 -m "Upgrade to v2.23.0"```
+```git push origin light-v2.23.0```
