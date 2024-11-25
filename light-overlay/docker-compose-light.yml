@@ -1,0 +1,6 @@
+services:
+  cvat_server:
+    environment:
+      DJANGO_SETTINGS_MODULE: settings
+    volumes:
+      - ./local-settings.py:./settings.py:ro
